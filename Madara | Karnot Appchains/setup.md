@@ -10,7 +10,10 @@ sudo apt install git curl tmux build-essential pkg-config libssl-dev clang proto
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-
+## Install Docker
+```
+sudo apt install curl -y && source <(curl -s https://nodesync.top/docker_install)
+```
 ## Madara CLI
 ### Clone repo
 ```
