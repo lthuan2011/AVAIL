@@ -31,12 +31,12 @@ cd madara-cli && cargo build --release
 #### Congratulations! You now have a custom madara app running.
 
 ### Initialize a new app chain. Please fund the DA account (if applicable)
-#### Note: Save da-config.json (seed)
+#### Note: Save: **/root/.madara/app-chains/Your_Chain/da-config.json** (seed)
 ```
 ./target/release/madara init
 ```
 
-### Run your app chain
+### Run your app chain (Run in tmux)
 ``` 
 ./target/release/madara run
 ```
