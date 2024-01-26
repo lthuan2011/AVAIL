@@ -24,6 +24,7 @@ git clone https://github.com/karnotxyz/madara-cli
 ```
 cd madara-cli && cargo build --release
 ```
+#### Congratulations! You now have a custom madara app running.
 
 ### Initialize a new app chain. Please fund the DA account (if applicable)
 #### Note: Save da-config.json (seed)
@@ -34,4 +35,9 @@ cd madara-cli && cargo build --release
 ### Run your app chain
 ``` 
 ./target/release/madara run
+```
+### explore the StarkCompass explorer
+Accessible at http://localhost:4000
+```
+./target/release/madara explorer
 ```
