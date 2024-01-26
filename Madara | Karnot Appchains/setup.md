@@ -36,8 +36,9 @@ cd madara-cli && cargo build --release
 ``` 
 ./target/release/madara run
 ```
-### explore the StarkCompass explorer
+### Explore the StarkCompass explorer
 Accessible at http://localhost:4000
 ```
 ./target/release/madara explorer
 ```
+#### Congratulations! You now have a custom madara app running.
