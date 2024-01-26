@@ -1,8 +1,10 @@
 # Setup on Ubuntu
 
 ## These are only required on ubuntu systems.
-```sudo apt update && sudo apt upgrade```
-sudo apt install git curl tmux build-essential pkg-config libssl-dev clang protobuf-compiler -y```
+```
+sudo apt update && sudo apt upgrade
+sudo apt install git curl tmux build-essential pkg-config libssl-dev clang protobuf-compiler -y
+```
 
 ## Install Rust
 ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
