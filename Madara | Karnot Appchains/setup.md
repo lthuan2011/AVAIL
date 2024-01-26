@@ -3,7 +3,7 @@
 ## These are only required on ubuntu systems.
 ```
 sudo apt update && sudo apt upgrade -y
-sudo apt install git curl tmux build-essential pkg-config libssl-dev clang protobuf-compiler -y
+sudo apt install git curl nginx tmux build-essential pkg-config libssl-dev clang protobuf-compiler -y
 ```
 
 ## Install Rust
