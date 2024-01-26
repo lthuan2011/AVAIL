@@ -22,7 +22,8 @@ git clone https://github.com/karnotxyz/madara-cli
 cd madara-cli && cargo build --release
 ```
 
-### nitialize a new app chain. Please fund the DA account (if applicable)
+### Initialize a new app chain. Please fund the DA account (if applicable)
+#### Note: Save da-config.json (seed)
 ```
 ./target/release/madara init
 ```
