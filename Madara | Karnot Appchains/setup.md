@@ -8,7 +8,8 @@ sudo apt install git curl tmux build-essential pkg-config libssl-dev clang proto
 
 ## Install Rust
 ```
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 
 ## Madara CLI
 ### Clone repo
