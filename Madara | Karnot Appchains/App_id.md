@@ -46,7 +46,9 @@ You would see a log like the one below. **164** will be your
 If you don't see "ApplicationKeyCreated" on logs, it's error before, Please install again.
 
 # Restart app chain with your APP_ID (Run in tmux)
+
 ctrl +c (stop app)
+
 Change **Your_Chain_Name**
 ```
 nano /root/.madara/app-chains/Your_Chain_Name/da-config.json
