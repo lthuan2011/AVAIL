@@ -42,7 +42,7 @@ nano $HOME/avail/avail-js/examples/node-examples/src/create-app-id.ts
 
 <img src="https://raw.githubusercontent.com/lthuan2011/Avail/main/Madara%20%7C%20Karnot%20Appchains/appname.JPG">
 
-## create-app-id
+## Create App ID
 ```
 cd $HOME/avail/avail-js/examples/node-examples
 ```
