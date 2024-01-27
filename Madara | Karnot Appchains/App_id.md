@@ -6,7 +6,7 @@ Get funds on this new account using the **Avail faucet**.
 
 # Install Node js and Npm using NVM
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+cd $HOME && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 ```
 export NVM_DIR="$HOME/.nvm"
@@ -18,7 +18,7 @@ nvm -v
 ```
 # Clone this repo Avail and config
 ```
-git clone https://github.com/availproject/avail
+cd $HOME && git clone https://github.com/availproject/avail
 ```
 ```
 cd $HOME/avail/avail-js/examples/ && npm i
