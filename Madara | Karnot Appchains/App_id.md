@@ -36,8 +36,10 @@ Change **your seed** and endpoint is **wss://goldberg.avail.tools:443/ws**
 ```
 nano $HOME/avail/avail-js/examples/node-examples/src/create-app-id.ts
 ```
-Change "YourAppName"
-Delete line 26 is : process.exit(0)
+#### Change "YourAppName"
+
+#### Delete line 26 is : process.exit(0)
+
 <img src="https://raw.githubusercontent.com/lthuan2011/Avail/main/Madara%20%7C%20Karnot%20Appchains/appname.JPG">
 
 ## create-app-id
