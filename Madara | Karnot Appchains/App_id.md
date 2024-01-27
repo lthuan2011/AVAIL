@@ -1,6 +1,6 @@
 # Registering an App Id on Avail
 
-Go to https://goldberg.avail.tools/#/accounts and create an account on Avail. Keep the seed phrase safe.
+Go to https://goldberg.avail.tools/#/accounts and create an account on Avail. Keep the **seed** phrase safe.
 
 Get funds on this new account using the **Avail faucet**.
 
@@ -26,4 +26,8 @@ cd $HOME/avail/avail-js/examples/ && npm i
 ```
 cd $HOME/avail/avail-js/examples/node-examples/ && npm i
 ```
-
+## Edit the config.ts file
+```
+nano $HOME/avail/avail-js/examples/config.ts
+```
+Change **your seed** and endpoint is **wss://goldberg.avail.tools:443/ws**
