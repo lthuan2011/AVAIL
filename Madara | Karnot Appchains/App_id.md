@@ -32,6 +32,11 @@ nano $HOME/avail/avail-js/examples/config.ts
 ```
 Change **your seed** and endpoint is **wss://goldberg.avail.tools:443/ws**
 
+## config create-app-id
+```
+nano $HOME/avail/avail-js/examples/node-examples/src/create-app-id.ts
+```
+
 ## create-app-id
 ```
 cd $HOME/avail/avail-js/examples/node-examples
