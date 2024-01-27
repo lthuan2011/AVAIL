@@ -53,5 +53,12 @@ Change **Your_Chain_Name**
 ```
 nano /root/.madara/app-chains/Your_Chain_Name/da-config.json
 ```
-Find and Change **"app_id":xxx** , xxx is your app id
+Find and Change **"app_id":xxx** , xxx is your app id , save them
+
+### Start 
+```
+./target/release/madara run
+```
+
+
 
