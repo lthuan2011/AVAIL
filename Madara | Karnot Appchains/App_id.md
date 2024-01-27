@@ -41,7 +41,7 @@ npm run create-app-id
 ```
 You would see a log like the one below. **164** will be your
 
-**app_id.dataAvailability.ApplicationKeyCreated::["0x546573742061707020617364736164736164616461206173646173646173","5Ci3f87otQeRC2y5gitVvbsez6EwCinhJwaK78MU2fCjv6Q5",164]**
+**app_id.dataAvailability.ApplicationKeyCreated::["0x5465737420617070206461206173643646173","5Ci3f87otQeRC2y5gitVvbsez6EwCinhJwaK78MU2fCjv6Q5",164]**
 
 If you don't see "ApplicationKeyCreated" on logs, it's error before, Please install again.
 
