@@ -1,6 +1,6 @@
 # Avail
 ## Auto Install use Snap NodeSync
-Please change <font color="#FF0000">ABCXYX</font> is YourNameonTelemetry
+Please change <span style="color: #FF0000">ABCXYX</span> is YourNameonTelemetry
 ```
 cd $HOME && yourname=ABCXYX  && sudo apt install curl -y && source <(curl -s https://raw.githubusercontent.com/lthuan2011/Avail/main/auto_install_snap_ns)
 ```
