@@ -1,4 +1,4 @@
-# Avail
+# Avail Upgrade v1.10.0.0
 ## Auto Install use Snap NodeSync
 Please change  ```ABCXYX```  is Your Name on Telemetry
 ```
