@@ -1,5 +1,6 @@
 # Avail
 ## Auto Install use Snap NodeSync
+$${\color{red}Red}$$
 ```html
    Please change <font color="red">ABCXYX</font> is YourNameonTelemetry
 ```
