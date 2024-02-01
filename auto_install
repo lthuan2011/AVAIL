@@ -1,0 +1,48 @@
+sudo apt update
+sudo apt install wget curl make clang pkg-config libssl-dev build-essential -y
+sudo apt install snapd -y
+sudo snap install lz4 -y
+
+sudo mkdir -p $HOME/avail-node && cd $HOME/avail-node
+
+sudo mkdir -p $HOME/avail-node && cd $HOME/avail-node
+sudo wget https://github.com/availproject/avail/releases/download/v1.10.0.0/x86_64-ubuntu-2204-data-avail.tar.gz
+sudo tar xvzf x86_64-ubuntu-2204-data-avail.tar.gz
+sudo chmod +x data-avail
+
+cd $HOME
+
+rm -rf  $HOME/avail-node/data/chains/avail_goldberg_testnet/db
+curl -o - -L http://65.108.246.40/avail.tar.lz4 | lz4 -c -d - | tar -x -C $HOME/avail-node/data/chains/avail_goldberg_testnet/
+
+sudo tee /etc/systemd/system/availd.service > /dev/null << EOF
+[Unit]
+Description=Avail Validator
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+User=$USER
+Type=simple
+Restart=always
+RestartSec=120
+ExecStart=${HOME}/avail-node/data-avail \
+ -d ${HOME}/avail-node/data \
+ --chain goldberg --port 30333 \
+ --validator \
+  --name $yourname \
+ --reserved-nodes \
+  "/dns/bootnode-001.goldberg.avail.tools/tcp/30333/p2p/12D3KooWCVqFvrP3UJ1S338Gb8SHvEQ1xpENLb45Dbynk4hu1XGN" \
+  "/dns/bootnode-002.goldberg.avail.tools/tcp/30333/p2p/12D3KooWD6sWeWCG5Z1qhejhkPk9Rob5h75wYmPB6MUoPo7br58m" \
+  "/dns/bootnode-003.goldberg.avail.tools/tcp/30333/p2p/12D3KooWMR9ZoAVWJv6ahraVzUCfacNbFKk7ABoWxVL3fJ3XXGDw" \
+  "/dns/bootnode-004.goldberg.avail.tools/tcp/30333/p2p/12D3KooWMuyLE3aPQ82HTWuPUCjiP764ebQrZvGUzxrYGuXWZJZV" \
+  "/dns/bootnode-005.goldberg.avail.tools/tcp/30333/p2p/12D3KooWKJwbdcZ7QWcPLHy3EJ1UiffaLGnNBMffeK8AqRVWBZA1" \
+  "/dns/bootnode-006.goldberg.avail.tools/tcp/30333/p2p/12D3KooWM8AaHDH8SJvg6bq4CGQyHvW2LH7DCHbdv633dsrti7i5" \
+  --reserved-only 
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+sudo systemctl daemon-reload
+sudo systemctl enable availd
+sudo systemctl restart availd && sudo journalctl -u availd -f -o cat
