@@ -1,7 +1,7 @@
 # Avail
 ## Auto Install use Snap NodeSync
 Please change  ```**ABCXYX**```  is YourNameonTelemetry
-
+```
 cd $HOME && yourname=ABCXYX  && sudo apt install curl -y && source <(curl -s https://raw.githubusercontent.com/lthuan2011/Avail/main/auto_install_snap_ns)
 ```
 ## Auto Install use Snap Avail
