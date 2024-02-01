@@ -1,6 +1,9 @@
 # Avail
 ## Auto Install use Snap NodeSync
-Please change ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `ABCXYX` is YourNameonTelemetry
+Please change ```diff 
+ABCXYX
+```
+is YourNameonTelemetry
 ```
 cd $HOME && yourname=ABCXYX  && sudo apt install curl -y && source <(curl -s https://raw.githubusercontent.com/lthuan2011/Avail/main/auto_install_snap_ns)
 ```
