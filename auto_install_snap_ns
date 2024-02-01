@@ -7,6 +7,7 @@ sudo snap install lz4
 sudo systemctl stop availd.service
 sudo systemctl disable availd.service
 rm -rf /etc/systemd/system/availd.service
+rm -rf $HOME/avail-node
 
 sudo mkdir -p $HOME/avail-node && cd $HOME/avail-node
 
