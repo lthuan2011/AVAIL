@@ -1,6 +1,7 @@
 # Avail
 ## Auto Install use Snap NodeSync
 Please change $${\color{red}ABCXYX}$$ is YourNameonTelemetry
+$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
 ```
 cd $HOME && yourname=ABCXYX  && sudo apt install curl -y && source <(curl -s https://raw.githubusercontent.com/lthuan2011/Avail/main/auto_install_snap_ns)
 ```
