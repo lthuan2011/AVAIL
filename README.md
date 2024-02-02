@@ -1,6 +1,6 @@
 # Avail Upgrade v1.10.0.0
 
-```**My guide will auto delete old install and old version. **```
+**```My guide will auto delete old install and old version. ```**
 
 ## 1. Auto Install use Snap NodeSync
 Please change  ```ABCXYX```  is Your Name on Telemetry
