@@ -16,3 +16,11 @@ cd $HOME && yourname=ABCXYX  && sudo apt install curl -y && source <(curl -s htt
 ```
 curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9944
 ```
+## 4. Goldberg - Validator - Staking
+```
+https://goldberg.avail.tools/?rpc=wss://goldberg.avail.tools:443/ws#/staking
+```
+## 5. Avail Telemetry
+```
+https://telemetry.avail.tools/#list/0x6f09966420b2608d1947ccfb0f2a362450d1fc7fd902c29b67c906eaa965a7ae
+```
