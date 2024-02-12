@@ -10,8 +10,6 @@ rm -rf /etc/systemd/system/availd.service
 rm -rf $HOME/avail-node
 
 sudo mkdir -p $HOME/avail-node && cd $HOME/avail-node
-
-sudo mkdir -p $HOME/avail-node && cd $HOME/avail-node
 sudo wget https://github.com/availproject/avail/releases/download/v1.10.0.0/x86_64-ubuntu-2204-data-avail.tar.gz
 sudo tar xvzf x86_64-ubuntu-2204-data-avail.tar.gz
 sudo chmod +x data-avail
@@ -19,6 +17,7 @@ sudo chmod +x data-avail
 cd $HOME
 
 rm -rf  $HOME/avail-node/data/chains/avail_goldberg_testnet/db
+sudo mkdir -p $HOME/avail-node/data/chains/avail_goldberg_testnet/db
 curl -o - -L http://snapshots.staking4all.org/snapshots/avail/latest/avail.tar.lz4 | lz4 -c -d - | tar -x -C $HOME/avail-node/data/chains/avail_goldberg_testnet/
 #http://65.108.246.40/avail.tar.lz4
 sudo tee /etc/systemd/system/availd.service > /dev/null << EOF
