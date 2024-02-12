@@ -19,8 +19,8 @@ sudo chmod +x data-avail
 cd $HOME
 
 rm -rf  $HOME/avail-node/data/chains/avail_goldberg_testnet/db
-curl -o - -L http://65.108.246.40/avail.tar.lz4 | lz4 -c -d - | tar -x -C $HOME/avail-node/data/chains/avail_goldberg_testnet/
-
+curl -o - -L http://snapshots.staking4all.org/snapshots/avail/latest/avail.tar.lz4 | lz4 -c -d - | tar -x -C $HOME/avail-node/data/chains/avail_goldberg_testnet/
+#http://65.108.246.40/avail.tar.lz4
 sudo tee /etc/systemd/system/availd.service > /dev/null << EOF
 [Unit]
 Description=Avail Validator
