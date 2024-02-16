@@ -35,7 +35,7 @@ ExecStart=${HOME}/avail-node/data-avail \
  --chain goldberg --port 30333 \
  --validator \
  --name $yourname \
- --unsafe-da-sync
+
 
 [Install]
 WantedBy=multi-user.target
